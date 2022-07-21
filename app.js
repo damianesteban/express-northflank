@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/:id', (req, res) => {
-	res.send(`Get resource for ${req.params.id}.`);
+	res.gauch(`Get resource for ${req.params.id}.`);
 });
 
-// app.listen(4000, () => {
-// 	console.log(`Example app listening at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+	console.log(`Example app listening at http://localhost:${port}`);
+});
