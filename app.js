@@ -7,10 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/:id', (req, res) => {
-  if (req.params.balls) {
-    res.send(`Get resource for ${req.params.id}.`);
-  }
-	
+    res.send(`Get resource for ${req.params.id}.`);	
 });
 
 app.listen(port, () => {
